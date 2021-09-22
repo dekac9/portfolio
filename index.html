@@ -16,7 +16,7 @@
       <main class="grid-container">
       <header>
       <div class="all">
-        <img class="pic" src="./Slike source/Face gold16_9.jpg" alt="slika" />
+        <img class="pic" src="./Slike/Face gold16_9.jpg" alt="slika" />
         <div id="navbar">
           <h1 class="logo">MD</h1>
           <nav>
@@ -82,9 +82,23 @@
       </div>
       </section>
       <section>
-        <div id="projects">
-          <h2>Projects</h2>
-          <p>
+        <div id="projects" class="grid-container bg-mehuri">
+          <header>
+            <div class="logo zuti-font">
+              <h1>Dejan Mitrovic</h1>
+            </div>
+            <div id="navbar">
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </header>
+          <div class="projekti tamni-font">
+            <h2 class="h2">Contact</h2>
+          <p class="paragrafi">
             Being a curious person, I'm always in a search for learning and
             self-improvement, very often comes on my mind quote "If there's a
             will, there's a way" and therefor, don't hesitate to contact me and
@@ -94,11 +108,63 @@
             <!-- div veliki sa dva manja po 50% width u levom divu nejednaki divovi sa projektima (neki natpisi font awesome ikonice) u desnom divu projekti (h2)popis projekata u paragrafu kao lista-->
           </p>
         </div>
+        <div class="slika1"></div>
+        <div class="slika2"></div>
+        <div class="slika3"></div>
+        <div class="slika4"></div>
+        <div class="nazad zuti-font"><a href="#home">BACK</a></div>
+      </div>
       </section>
-    </main>
 
-    <footer>
-      <div id="footer">&copy; by Dejan Mitrovic 2021</div>
-    </footer>
+
+      <section>
+        <div id="contact" class="grid-container bg-mehuri">
+          <header>
+            <div class="logo zuti-font">
+              <h1>Dejan Mitrovic</h1>
+            </div>
+            <div id="navbar">
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </header>
+          <div class="slika-krug">
+            <div class="upitnik">
+              
+            </div>
+  
+            <div class="slika-tekst tamni-font">
+              <h2 class="h2">Contact</h2>
+              <p class="paragrafi">
+                If you have any question at all, feel free to contact me for any kind of additional info or explanation. Time of day is not an issue.
+              </p>
+            </div>
+          </div>
+          
+          <div class="input-forma">
+            <label for="ime" class="tamni-font"> Unesi ime:</label>
+            <input type="text" name="name" id="ime" required >
+            <label for="prezime" class="tamni-font">Unesi prezime:</label>
+            <input type="text" name="last" id="prezime">
+            <label for="tel" class="tamni-font">Unesi kontakt telefon:</label>
+            <input type="tel" name="phone" id="tel" placeholder="+381">
+            <label for="tekst" class="tamni-font">Poruka:</label>
+            <textarea name="text" id="tekst" cols="30" rows="10"></textarea>
+            <div class="dugmici">
+              <button type="submit">Reset</button>
+              <button type="reset">Send</button>
+            </div>
+          </div>
+          <div class="kopi-rajt tamni-font">
+            <p class="paragrafi">&copy; by Dejan Mitrovic 2021</p></div>
+  
+          <div class="nazad zuti-font"><a href="#home">BACK</a></div>
+          <!-- ima dva diva po 50% width, u okviru levog dva po visini, u gornjem slika u donjem natpis (h2) o meni(.opisi-mali) u desnom divu tri manja po visini (.vestine)  (HTML,CSS,JS kao nekakva skala)  -->
+        </div>
+      </section>
   </body>
 </html>
