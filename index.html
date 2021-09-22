@@ -8,13 +8,15 @@
     <!-- sve u open sans fontu 300 i 400 -->
     <title>Portfolio</title>
   </head>
-  <body id="home">
-    <header>
+  <body>
+    <section  id="home">
       <!-- pocetna strana, velika slika zlatna :) (pozadina), navbar desno, logo levo sve blago providno
       na sredini slike,levo jedan div sa generalijama
       kad se skroluje, navbar ostaje gore fiksno-->
+      <main class="grid-container">
+      <header>
       <div class="all">
-        <img class="pic" src="./Slike source/Face gold16_9.jpg" alt="" />
+        <img class="pic" src="./Slike source/Face gold16_9.jpg" alt="slika" />
         <div id="navbar">
           <h1 class="logo">MD</h1>
           <nav>
@@ -22,28 +24,45 @@
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
+      </header>
         <div id="natpis-naslovna">
+          <div class="prvi">
           <h2>Dejan Mitrovic M.Sc.ME</h2>
           <p>Web Design & Front-end Development</p>
-          <br />
-          <p>
-            "Have the courage to follow your heart and intuition" <br />
-            Steve Jobs
-          </p>
+          </div>
+          <div class="drugi">
+           <p>"Have the courage to follow your heart and intuition" </p>
+           <p>Steve Jobs</p>
+          </div>
         </div>
-      </div>
-    </header>
+    </main>
+</section>
 
-    <main>
       <section>
-        <div id="about">
-          <div class="slika-tekst">
-            <div class="slika-krug"></div>
-            <h2>About me</h2>
-            <p>
+        <div id="about" class="grid-container bg-svetlo bg-mehuri">
+          <header>
+            <div class="logo zuti-font">
+              <h1>Dejan Mitrovic</h1>
+            </div>
+            <div id="navbar">
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </header>
+          <div class="img">
+            
+          </div>
+          <div class="slika-tekst tamni-font">
+            <h2 class="h2">About me</h2>
+            <p class="paragrafi">
               My journey started 1977 in Belgrade. Finished elementary and high
               school Petar Drapsin in Belgrade. After that, graduated from the
               Faculty of Mechanical Engineering in 2002 in Belgrade. 2003
@@ -56,9 +75,11 @@
               Besides English I'm speaking Hungarian but unfortunately, not as
               good as I want to, but hey, I'm still improving.
             </p>
+            </div>
           </div>
-          <!-- ima dva diva po 50% width, u okviru levog dva po visini, u gornjem slika u donjem natpis (h2) o meni(.opisi-mali) u desnom divu tri manja po visini (.vestine)  (HTML,CSS,JS kao nekakva skala)  -->
-        </div>
+          <div class="nazad zuti-font"><a href="#home">BACK</a></div>
+        <!-- ima dva diva po 50% width, u okviru levog dva po visini, u gornjem slika u donjem natpis (h2) o meni(.opisi-mali) u desnom divu tri manja po visini (.vestine)  (HTML,CSS,JS kao nekakva skala)  -->
+      </div>
       </section>
       <section>
         <div id="projects">
