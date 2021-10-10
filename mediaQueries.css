@@ -1,0 +1,32 @@
+@media screen and (max-width:768px){
+  body{
+    display:none;
+  }
+  }
+  
+  
+  @media screen and (max-width:992px){
+    .home-grid-container {
+      grid-template-areas:
+        "h"
+        "m";
+
+      grid-template-columns: 100%;
+      grid-template-rows: 3em auto;
+    }
+    .logo{
+      display: none;
+    }
+    header {
+      justify-content: center;
+    }
+    .prvi{
+      width: 100%;
+      margin-right: 10em;
+    }
+    .drugi{
+      width: 100%;
+      
+    }
+    
+}
