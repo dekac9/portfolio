@@ -103,13 +103,8 @@
       "projekti slikeprojekti"
       "f f";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 3em auto 3em;
   }
   .slike-projekti {
-  grid-area: slikeprojekti;
-  display: grid;
-  gap: 1.5em;
-  padding: 1.5em;
   grid-template-areas:
     "b c"
     "d d";
@@ -119,6 +114,23 @@
   display: none;
 }
 
+.contact-grid-container {
+  grid-template-columns: 60% 40%;
 
+}
+
+.input-forma {
+  padding:0;
+  margin: 1em 0 1em 1em;
+}
+
+.slika-kocka-input {
+padding-right: 2em;
+}
+#contact .slika-tekst .kopirajt{
+  height:30em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 
 }
