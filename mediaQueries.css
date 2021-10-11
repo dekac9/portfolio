@@ -35,6 +35,7 @@
 
 @media screen and (max-width: 992px) {
   .home-grid-container {
+    height: 100vh;
     grid-template-areas:
       "h"
       "m";
@@ -65,31 +66,59 @@
   }
 
   .about-grid-container {
-    height: 100vh;
+    height: 100%;
     grid-template-areas:
       "h"
+      "progres"
       "about"
       "f";
     grid-template-columns: 100%;
-    grid-template-rows: 3em auto 3em;
+    grid-template-rows: 3em 0px auto 3em;
+  }
+
+  .progres-barovi{
+    display: none;
   }
 
   .slika-krug {
-    margin: auto auto;
+    margin: 0 auto;
     text-align: center;
-    width: 70%;
+    width: 80%;
     height: 100%;
-    margin-bottom: auto;
+    padding-bottom: 1.5em;
+ 
+    
+  }
+  .about .slika-tekst p{
+    padding-bottom: auto;
   }
   
 
-  /* .project-grid-container {
+ 
+
+  .project-grid-container {
     height: 100vh;
     grid-template-areas:
-      "h"
-      "projekti"
-      "f";
-    grid-template-columns: 100%;
+      "h h"
+      "projekti slikeprojekti"
+      "f f";
+    grid-template-columns: 50% 50%;
     grid-template-rows: 3em auto 3em;
-  } */
+  }
+  .slike-projekti {
+  grid-area: slikeprojekti;
+  display: grid;
+  gap: 1.5em;
+  padding: 1.5em;
+  grid-template-areas:
+    "b c"
+    "d d";
+}
+
+.slika1{
+  display: none;
+}
+
+
+
 }

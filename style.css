@@ -14,6 +14,12 @@ html {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+#home,
+#about,
+#projects,
+#contact {
+  height: 100vh;
+}
 
 .bg-mehuri {
   background-image: url(./Slike/Mehuri\ siva-smanjeno.jpg);
@@ -31,7 +37,7 @@ body {
 
 .tamni-font {
   color: #222;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .box-shadow {
@@ -109,7 +115,7 @@ ul li {
   background-color: #333;
   opacity: 0.7;
   border-radius: 0 0 0.4em 0.4em;
-  box-shadow: 0 0 10px;
+  box-shadow: 0 10px 10px -6px;
 }
 
 ul li a {
@@ -153,7 +159,7 @@ li a:hover {
 }
 
 .paragrafi {
-  line-height: 1.3em;
+  line-height: 1.2em;
 }
 
 .h1 {
@@ -209,7 +215,7 @@ li a:hover {
     "h h"
     "progres about"
     "f f";
-  height: 100vh;
+  height: 100%;
   width: 100%;
   grid-template-columns: 40% 60%;
   grid-template-rows: 3em auto 3em;
@@ -223,8 +229,17 @@ li a:hover {
     "f f f";
   height: 100vh;
   width: 100%;
-  grid-template-columns: 20% 40% 40%;
+  grid-template-columns: 30% 35% 35%;
   grid-template-rows: 3em auto 3em;
+}
+
+.projekti {
+  margin-left: 1em;
+
+}
+
+.kopi-rajt p{
+  margin-top:em;
 }
 
 .slike-projekti {
@@ -312,10 +327,10 @@ li a:hover {
 }
 
 .slika-krug {
-
   grid-area: about;
   display: flex;
   padding-top: 2em;
+  padding-bottom: auto;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -352,6 +367,7 @@ li a:hover {
 .projekti {
   /*   grid-row:2/5;
   grid-column: 1/2; */
+  grid-area: projekti;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
