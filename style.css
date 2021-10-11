@@ -1,18 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 
 * {
   box-sizing: border-box;
   list-style: none;
   padding: 0;
   margin: 0;
-  
 }
 
 html {
   scroll-behavior: smooth;
 }
-
-
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -24,22 +21,21 @@ body {
   background-repeat: no-repeat;
 }
 
-.bg-svetlo{
-  background-color:#555;
+.bg-svetlo {
+  background-color: #555;
 }
 
-.zuti-font{
+.zuti-font {
   color: rgb(248, 252, 13);
 }
 
-.tamni-font{
+.tamni-font {
   color: #222;
   font-weight: 600;
 }
 
-.box-shadow{
+.box-shadow {
   box-shadow: 0 0 10px;
-
 }
 
 .home-grid-container {
@@ -56,8 +52,13 @@ body {
   background-repeat: no-repeat;
 }
 
+.header {
+  position: relative;
+}
+
 header {
   /*   height: 3em; */
+
   grid-area: h;
   display: flex;
   justify-content: space-between;
@@ -73,7 +74,7 @@ header {
   padding-right: 10em;
   font-family: "Indie Flower", cursive;
   display: flex;
-/*   letter-spacing: 0.4em; */
+  /*   letter-spacing: 0.4em; */
 
   align-items: center;
   margin-left: 3em;
@@ -89,14 +90,12 @@ header {
   letter-spacing: 1em;
 }
 
-
-
-ul{
+ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 100%;
-    width: 100%;
+  width: 100%;
 }
 
 ul li {
@@ -106,7 +105,7 @@ ul li {
   width: 8em;
   margin-right: 1em;
   justify-content: space-around;
-  
+
   background-color: #333;
   opacity: 0.7;
   border-radius: 0 0 0.4em 0.4em;
@@ -115,18 +114,16 @@ ul li {
 
 ul li a {
   display: flex;
- text-decoration: none;
- height: 100%;
- padding:0 1em;
- color: rgb(248, 252, 13);
- width: 100%;
+  text-decoration: none;
+  height: 100%;
+  padding: 0 1em;
+  color: rgb(248, 252, 13);
+  width: 100%;
   border-radius: 0 0 0.4em 0.4em;
- letter-spacing: 0.2em;
- justify-content: center;
- align-items: center;
-  
+  letter-spacing: 0.2em;
+  justify-content: center;
+  align-items: center;
 }
-
 
 li a:hover {
   color: yellow;
@@ -134,8 +131,6 @@ li a:hover {
   background-color: black;
   transition: 0.3s;
   cursor: pointer;
- 
-
 }
 
 .active {
@@ -236,7 +231,7 @@ li a:hover {
   grid-area: slikeprojekti;
   display: grid;
   gap: 1.5em;
-  padding:1.5em;
+  padding: 1.5em;
   grid-template-areas:
     "a b c"
     "a d d";
@@ -317,15 +312,14 @@ li a:hover {
 }
 
 .slika-krug {
+
   grid-area: about;
   display: flex;
-padding-top: 2em;
+  padding-top: 2em;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-
-
 
 .progres-barovi {
   grid-area: progres;
@@ -348,10 +342,10 @@ padding-top: 2em;
 
 .slika-tekst {
   width: 90%;
-  font-size: 1em;
+
   display: flex;
   flex-direction: column;
-  padding: 0 1em;
+  /* padding: 0 1em; */
   text-align: justify;
 }
 
@@ -457,8 +451,3 @@ button:hover {
     color: yellow;
   }
 }
-
-
-
-
-
