@@ -9,14 +9,14 @@
 
 html {
   
-  /* scroll-snap-type: y mandatory; */
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#home,
+#pocetna,
 #about,
 #projects,
 #contact {
@@ -142,7 +142,7 @@ li a:hover {
   cursor: pointer;
 }
 
-.active {
+.aktivanLink {
   animation: aktivanLink;
   animation-duration: 2s;
   animation-iteration-count: infinite;
