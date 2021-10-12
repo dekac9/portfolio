@@ -8,6 +8,8 @@
 }
 
 html {
+  
+  /* scroll-snap-type: y mandatory; */
   scroll-behavior: smooth;
 }
 
@@ -19,6 +21,7 @@ body {
 #projects,
 #contact {
   height: 100vh;
+  scroll-snap-align: center;
 }
 
 .bg-mehuri {
@@ -327,10 +330,11 @@ li a:hover {
 }
 
 .slika-krug {
+  width: 100%;
   grid-area: about;
   display: flex;
   padding-top: 2em;
-  padding-bottom: auto;
+
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
